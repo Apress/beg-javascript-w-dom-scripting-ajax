@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html dir="ltr" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<title>Example: Window properties</title>
+	<style type="text/css">
+	</style>
+	<script type="text/javascript">
+	function winProps(){
+		var winWidth=window.outerWidth;
+		var winHeight=window.outerHeight;
+		var docWidth=window.innerWidth;
+		var docHeight=window.innerHeight;
+		var message='This window is ';
+		message+=winWidth+' pixels wide and ';
+		message+=winHeight+' pixels high.\n';
+		message+='The inner dimensions are:';
+		message+=docWidth+' * '+docHeight+' pixels';
+		alert(message);
+	}
+	window.onload=winProps;
+	</script>
+</head>
+<body>
+
+</body>
+</html>

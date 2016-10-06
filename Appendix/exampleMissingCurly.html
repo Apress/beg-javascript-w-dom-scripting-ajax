@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html dir="ltr" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <title>Example: An parameter typo</title>
+  <style type="text/css">
+  </style>
+  <script type="text/javascript">
+	function testRange(x,start,end){
+	if(x<=end && x>=start){
+	if(x==start){
+	alert(x + ' is the start of the range');
+	}
+	if(x==end){
+	alert(x + ' is the end of the range');
+	}
+	if(x!=start && x!=end){
+	alert(x + ' is in the range');
+	} else {
+	alert(x + ' is not in the range');
+	}
+	}
+	testRange(2,0,100);
+	testRange(1,3,300);
+	testRange(0,0,100);
+	testRange(100,0,100);
+  </script>
+</head>
+<body>
+
+</body>
+</html>

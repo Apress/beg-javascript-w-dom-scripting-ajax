@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html dir="ltr" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <title>Example: Using the DOMhelp debug console</title>
+  <style type="text/css">
+	  #DOMhelpdebug{
+			position:absolute;
+			top:0;
+			right:0;
+			width:300px;
+			height:200px;
+			overflow:scroll;
+			background:#000;
+			color:#090;
+			white-space:pre;
+			font-family:courier,monospace;
+			padding:1em;
+		}
+		html>body #DOMhelpdebug{
+			position:fixed;
+			height:auto;
+			min-height:200px;
+			height:200px;
+			overflow:auto;
+		}
+  </style>
+  <script type="text/javascript" src="../DOMhelp.js"></script>
+  <script type="text/javascript">
+	function DOMDebugTest(){
+	  	DOMhelp.initDebug();
+	  	for(var i=0;i<300;i++){
+      		DOMhelp.setDebug(i+' : '+(i%3==0)); 
+	  	}
+	}
+	DOMhelp.addEvent(window,'load',DOMDebugTest,false);
+  </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+.overlay {
+	position:absolute;
+	display:block;
+}
+.panel-container {
+	position:absolute;
+	background-color:transparent;
+	z-index:6;
+	visibility:hidden;
+	overflow:visible;
+	width:auto;
+}
+.panel-container.matte {
+	padding:3px;
+	background-color:#FFF;
+}
+.panel {
+	width:15em;
+	visibility:hidden;
+	border-collapse:separate;
+	position:relative;
+	left:0px;top:0px;
+	font:1em Arial;
+	background-color:#FFF;
+	border:1px solid #000;
+	z-index:1;
+	overflow:auto;
+}
+.panel .hd {
+	background-color:#3d77cb;
+	color:#FFF;
+	font-size:1em;
+	height:1em;
+	border:1px solid #FFF;
+	border-bottom:1px solid #000;
+	font-weight:bold;
+	overflow:hidden;
+	padding:4px;
+}
+.panel .bd {
+	overflow:auto;
+	padding:4px;
+	height:10em;
+}
+.panel .bd p {
+	margin:0 0 1em;
+}
+.panel .close {
+	position:absolute;
+	top:5px;
+	right:4px;
+	z-index:6;
+	height:12px;
+	width:12px;
+	margin:0px;
+	padding:0px;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	visibility:inherit;
+}
+.panel .close.nonsecure {
+	background-image:url(http://us.i1.yimg.com/us.yimg.com/i/nt/ic/ut/alt3/close12_1.gif);
+}
+.panel .close.secure {
+	background-image:url(https://a248.e.akamai.net/sec.yimg.com/i/nt/ic/ut/alt3/close12_1.gif);
+}
+.panel .ft {
+	padding:4px;
+	overflow:hidden;
+}

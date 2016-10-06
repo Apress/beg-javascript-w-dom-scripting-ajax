@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html dir="ltr" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <title>Example: Changing the default value of a text element</title>
+  <style type="text/css">
+    @import 'form.css';
+  </style>
+  <script type="text/javascript" src="formRadioGroup.js">
+  </script>
+</head>
+<body>
+<h1>Calvin and Hobbes Survey</h1>
+<div id="js">
+<h2>JavaScript tests:</h2> 
+<p>
+  <input type="button" onclick="getChoice()" value="check choice" />
+  <input type="button" onclick="setChoice(1)" value="set choice to Hobbes" />
+</p>
+<p id="jsout"></p>
+</div>
+<form method="post" action="send.php">
+  <fieldset>
+    <legend>Step 1 of 3 - Your favourite Character </legend>
+     <p>
+       <input type="radio" name="character" id="charC" 
+        value="Calvin" checked="checked" />
+       <label for="charC">Calvin</label>
+     </p>
+     <p>
+       <input type="radio" name="character" 
+        id="charH" value="Hobbes" />
+       <label for="charH">Hobbes</label>
+   </p>
+   <p>
+      <input type="radio" name="character" 
+       id="charSd" value="Susie Derkins" />
+      <label for="charSd">Susie Derkins</label>
+   </p>
+   <p>
+     <input type="radio" name="character" 
+      id="charS" value="Spaceman Spiff" />
+     <label for="charS">Spaceman Spiff</label>
+   </p>
+   <p>
+     <input type="radio" name="character" 
+      id="charSm" value="Stupendous Man" />
+     <label for="charSm">Stupendous Man</label>
+   </p>
+  </fieldset>
+  <p class="submit"><input type="submit" value="Next Step" /></p>
+</form>
+</body>
+</html>

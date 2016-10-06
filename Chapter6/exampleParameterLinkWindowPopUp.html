@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html dir="ltr" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<title>Example: Opening a window via a link with a parameter</title>
+	<style type="text/css">
+	</style>
+	<script type="text/javascript">
+	function popup(url){
+	  var windowprops="width=200,height=200,top=100,left=100";
+	  var myWin =  window.open(url,"mynewwin",windowprops);
+	}
+	</script>
+</head>
+<body>
+<p>
+<a href="grid.html" onclick="popup(this.href);return false">
+  Open grid
+</a>
+</p>
+<p>
+  <a href="http://www.yahoo.co.uk" target="mynewwin">Open Yahoo</a>
+</p>
+</body>
+</html>

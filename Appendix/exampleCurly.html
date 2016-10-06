@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html dir="ltr" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <title>Example: An parameter typo</title>
+  <style type="text/css">
+  </style>
+  <script type="text/javascript">
+	  function getFamilyData(outputID,familyName){
+	    var father,mother,child;
+	    switch(familyName){
+	      case 'Griffin':
+	        father = "Peter";
+	        mother = "Lois";
+	        child = "Chris";
+	      break;
+	      case 'Flintstone':
+	        father = "Fred";
+	        mother = "Wilma";
+	        child = "Pebbles";
+	      break;
+	    }
+	    var out=document.getElementById(outputID);
+	    var newUL=document.createElement('ul');
+	    newUL.appendChild(makeListElement(father));
+	    newUL.appendChild(makeListElement(mother));
+	    newUL.appendChild(makeListElement(child));
+	    out.appendChild(newUL);
+	    }
+	  }
+	  getFamilyData('tree',true,'Griffin');
+  </script>
+</head>
+<body>
+
+</body>
+</html>

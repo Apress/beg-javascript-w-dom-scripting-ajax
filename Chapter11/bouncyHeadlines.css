@@ -1,0 +1,24 @@
+body{
+	padding:2em;
+}
+#headlines li p,#headlines li h3{
+  width:300px;  
+}
+#headlines.dynamic h3{
+  width:300px;
+  cursor:pointer;
+}
+#headlines.dynamic li p{
+  width:300px;  
+  height:auto;
+  position:absolute;
+  left:-30000px;
+  overflow:hidden;
+}
+#headlines.dynamic li p.shown{
+  width:300px;  
+  height:0px;
+  position:relative;
+  left:0;
+  overflow:hidden;
+}
